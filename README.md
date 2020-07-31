@@ -1,9 +1,10 @@
 # WE_LUNG_U
+using Docker and Flask
+
 - Hyojeong Chang
 - Jonggeun Park
 - Minjoo Lee
 
-using Docker and Flask
 ## How to run 
 ### 1. Run bash shell
 Make .env file and run bash shell of WeLungU docker container
@@ -22,11 +23,15 @@ Install python virtual environment, pip and packages(requirements.txt)
 ```
 # ./run_we_Lung_u_flask.sh
 ```
-
+### 4. Access localhost
+Open your browser and type that address below!
+```
+localhost:5000
+```
 ********************************************************************************
 
-**How to solve**
+**How to solve...**
 - "permission denied" of script file
 ``` 
-$ chmod +x file_name.sh
+$ chmod +x script_file_name.sh
 ```
