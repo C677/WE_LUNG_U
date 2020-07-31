@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  weLungU:
+    image: python:latest
+    volumes:
+      - ${path}:/root/WE_LUNG_U
+    working_dir: /root/WE_LUNG_U
+  
+  
