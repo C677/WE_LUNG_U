@@ -25,12 +25,12 @@ http://0.0.0.0:80/
 
 **How to solve...**
 - When edited your code is not working
-1. Delete docker container
+1. Remove docker container
 ``` 
 $ docker rm -f $(docker ps -aq)
 ```
 
-2. Delete docker images
+2. Remove docker images
 ``` 
 $ docker rmi -f $(docker images -a -q)
 ```
