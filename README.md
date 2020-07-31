@@ -6,32 +6,33 @@ using Docker and Flask
 - Minjoo Lee
 
 ## How to run 
-### 1. Run bash shell
-Make .env file and run bash shell of WeLungU docker container
+### 1. Start server
+/WE_LUNG_U/we_Lung_u_flask/
 ```
-$ ./start.sh
-```
-
-### 2. Install python dependencies
-Install python virtual environment, pip and packages(requirements.txt)
-
-```
-# ./install.sh
+$ docker-compose up
 ```
 
-### 3. Start server
-```
-# ./run_we_Lung_u_flask.sh
-```
-### 4. Access localhost
+### 2. Access localhost
 Open your browser and type that address below!
 ```
-localhost:5000
+localhost
+```
+or
+```
+http://0.0.0.0:80/
 ```
 ********************************************************************************
 
 **How to solve...**
-- "permission denied" of script file
+- When edited your code is not working
+1. Delete docker container
 ``` 
-$ chmod +x script_file_name
+$ docker rm -f $(docker ps -aq)
 ```
+
+2. Delete docker images
+``` 
+$ docker rmi -f $(docker images -a -q)
+```
+
+3. Then, restart from scratch!
