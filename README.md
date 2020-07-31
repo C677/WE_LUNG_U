@@ -33,5 +33,5 @@ localhost:5000
 **How to solve...**
 - "permission denied" of script file
 ``` 
-$ chmod +x script_file_name.sh
+$ chmod +x script_file_name
 ```
