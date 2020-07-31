@@ -5,9 +5,6 @@
 
 using Docker and Flask
 ## How to run 
-
-********************************************************************************
-
 ### 1. Run bash shell
 Make .env file and run bash shell of WeLungU docker container
 ```
