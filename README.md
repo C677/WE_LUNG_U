@@ -1,7 +1,7 @@
 # WE_LUNG_U
 using Docker and Flask
 
-- Hyojeong Chang
+- Hyojung Chang
 - Jonggeun Park
 - Minjoo Lee
 
