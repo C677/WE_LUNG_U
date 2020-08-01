@@ -13,6 +13,10 @@ def we_lung_u():
 def index():
     return render_template('index.html')
 
+@app.route('/check')
+def check():
+    return render_template('check.html', title = 'Check')
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html', title = 'Contact')

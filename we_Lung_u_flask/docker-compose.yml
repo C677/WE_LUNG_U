@@ -5,4 +5,7 @@ services:
     build: .
     ports:
       - "80:80"
+    # if you want (Environment: Production), delete the code below
+    environment:
+      - FLASK_ENV=Development
     

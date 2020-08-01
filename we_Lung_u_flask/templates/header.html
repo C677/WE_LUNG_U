@@ -12,24 +12,34 @@
     <title>WE_LUNG_U</title>
     <!-- Bootstrap CSS -->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link href="../static/css/style.css" rel="stylesheet">
 
+     <!-- Google Fonts -->
+    <!-- 폰트 예쁜걸로 바꾸기-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
   </head>
  
   <body>
-    <header>
-      <nav>
-        <a href="/">WE_LUNG_U</a>
-        <a href="/">Home</a>
-        <a href="/contact">Contact</a>
-      </nav>
-      <hr>
+    <header id="header" >
+      <div class="container">
+        <div id="logo" class="pull-left">
+          <h1><a href="/" >WE_<span>LUNG</span>_U</a></h1>
+        </div>
+  
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            {% block menu %}{% endblock%}
+          </ul>
+         </nav>
+      </div>
     </header>
+
  
-    <main role="main">
     <!-- usable space -->
     {% block content %}{% endblock %}
-    </main>
-    
+  
+
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
   </body>
