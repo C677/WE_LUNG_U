@@ -1,14 +1,24 @@
-import os
-from flask import Flask
+#import os
+from flask import Flask, render_template
+from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
+Bootstrap(app)
 
 @app.route('/')
 def we_lung_u():
-    return "WE_LUNG_U"
+    return render_template('index.html')
+
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html', title = 'Contact')
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 80))
+  #  port = int(os.environ.get("PORT", 80))
     try:
         app.run(host="0.0.0.0", port=80, debug=True)
     except Exception as ex:
