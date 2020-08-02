@@ -1,16 +1,16 @@
-{% extends 'header.html' %}
+{% extends 'layout.html' %}
 {% block menu %}
 <li class="menu-active"><a href="/">Home</a></li>
 <li><a href="/check">Check</a></li>
 <li><a href="/contact">Contact</a></li>
 {% endblock %}
 {% block content %}
-<section id="hero" class="wow fadeIn">
-    <div class="hero-container">
+<section id="main">
+    <div class="main-container">
       <h1> Do you have healthy lungs? </h1>
       <h2> Check your lungs with we_lung_u right now -> </h2>
       <!-- 버튼 누르면 사진 업로드 할 수 있도록-->
-      <a href="" class="btn-get-started scrollto">Check!</a>
+      <a href="" class="btn-check">Check!</a>
     </div>
   </section>
 {% endblock%}

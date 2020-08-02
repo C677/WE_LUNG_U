@@ -56,7 +56,7 @@ li {
   color:#66CCCC;
 }
 
-#hero {
+#main {
   width: 100%;
   height: calc(100vh - 40px);
   /*background: url(../img/.png) center bottom no-repeat;*/
@@ -66,12 +66,12 @@ li {
 }
 
 @media (min-width: 1025px) {
-  #hero {
+  #main {
     background-attachment: fixed;
   }
 }
 
-#hero .hero-container {
+#main .main-container {
   position: absolute;
   background-color: #000;
   /*background-image: url( "../img/black.jpg" );*/
@@ -88,7 +88,7 @@ li {
 
 }
 
-#hero h1 {
+#main h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -98,13 +98,13 @@ li {
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #main h1 {
     font-size: 28px;
     line-height: 36px;
   }
 }
 
-#hero h2 {
+#main h2 {
   color: #868e96;
   margin-bottom: 30px;
   font-size: 20px;
@@ -113,14 +113,14 @@ li {
 }
 
 @media (max-width: 768px) {
-  #hero h2 {
+  #main h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 }
 
-#hero .btn-get-started {
+#main .btn-check {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -137,7 +137,7 @@ li {
   text-decoration: none;
 }
 
-#hero .btn-get-started:hover {
+#main .btn-check:hover {
   background: #66ccab;
   color: #fff;
 }
