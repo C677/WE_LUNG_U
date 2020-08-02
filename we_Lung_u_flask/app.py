@@ -1,5 +1,6 @@
 #import os
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from werkzeug.utils import secure_filename
 #from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
@@ -13,9 +14,12 @@ def we_lung_u():
 def index():
     return render_template('index.html')
 
-@app.route('/check')
+@app.route('/check', methods = ['GET', 'POST'])
 def check():
-    return render_template('check.html', title = 'Check')
+    if request.method == 'POST':
+        f = request.files['file']
+        f.save('./static/img/'+secure_filename(f.filename))
+    return render_template('check.html', title = 'Check', check_message_test=str(f.filename))
 
 @app.route('/contact')
 def contact():
