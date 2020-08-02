@@ -1,11 +1,5 @@
 @charset "UTF-8";
 /*reference: BootstrapMade.com*/
-/*.col-sm-12, .col-sm-6, .col-md-6, col-md-5{
-  position:relative;
-  min-height:1px;
-  padding-right:15px;
-  padding-left:15px;
-}*/
 body{
   background-color: #f5f5f5;
 }
