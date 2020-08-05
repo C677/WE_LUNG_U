@@ -16,7 +16,7 @@
                 <div class="col-sm-6 col-md-5">
                   <div class="boxtitle">
                       <h5 class="title-left">
-                          Diagnosis Result {{ check_message_test }}
+                          Diagnosis Result 
                       </h5>
                   </div>
                 </div>
@@ -29,30 +29,30 @@
                   </div>
                   <div class="col-sm-6">
                       <div>
-                          Lung cancer
+                          {{ result }}
                       </div>
                   </div>
               </div>
               <div class="prob">
                 <p class="title-s">Probability</p>
-                <span>Lung cancer</span> <span class="pull-right">90%</span>
+                <span>Lung cancer</span> <span class="pull-right">{{ LC }}%</span>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" id="lungcancer" role="progressbar" style="width:{{ LC }}%" aria-valuenow="{{ LC }}" aria-valuemin="0"
                     aria-valuemax="100"></div>
                 </div>
-                <span>pneumonia</span> <span class="pull-right">5%</span>
+                <span>pneumonia</span> <span class="pull-right">{{ p }}%</span>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0"
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" id="pneumonia" role="progressbar" style="width:{{ p }}%" aria-valuenow="{{ p }}" aria-valuemin="0"
                     aria-valuemax="100"></div>
                 </div>
-                <span>tuberculosis</span> <span class="pull-right">3%</span>
+                <span>tuberculosis</span> <span class="pull-right">{{ t }}%</span>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 3%" aria-valuenow="3" aria-valuemin="0"
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" id="tuberculosis" role="progressbar" style="width:{{ t }}%" aria-valuenow="{{ t }}" aria-valuemin="0"
                     aria-valuemax="100"></div>
                 </div>
-                <span>etc</span> <span class="pull-right">2%</span>
+                <span>etc</span> <span class="pull-right">{{ e }}%</span>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 2%" aria-valuenow="2" aria-valuemin="0"
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" id="etc" role="progressbar" style="width:{{ e }}%" aria-valuenow="{{ e }}" aria-valuemin="0"
                     aria-valuemax="100"></div>
                 </div>
               </div>
@@ -103,6 +103,7 @@
                   </h5>
               </div>
                 <p class="lead">
+                    파일 업로드 테스트: {{ check_message_test }}
                     어떻고 저떻고 할 말 있음 여기에 가나다라마바사아자차카타파하 가나다라마바사아자차카타파하 가나다라마바사아자차카타파하가나다라마바사아자차카타파하
                 </p>
             </div>

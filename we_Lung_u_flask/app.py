@@ -19,7 +19,7 @@ def check():
     if request.method == 'POST':
         f = request.files['file']
         f.save('./static/img/'+secure_filename(f.filename))
-    return render_template('check.html', title = 'Check', check_message_test=str(f.filename))
+    return render_template('check.html', title = 'Check', result = 'lung cancer', check_message_test=str(f.filename), LC=80, p=5, t=5, e=10)
 
 @app.route('/contact')
 def contact():
