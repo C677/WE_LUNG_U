@@ -11,6 +11,7 @@
       <div class="col-sm-12">
         <div class="shadow">
           <div class="row">
+            {% if check_message_test != 'empty'%}
             <div class="col-md-6">
               <div class="row">
                 <div class="col-sm-6 col-md-5">
@@ -107,6 +108,15 @@
                     어떻고 저떻고 할 말 있음 여기에 가나다라마바사아자차카타파하 가나다라마바사아자차카타파하 가나다라마바사아자차카타파하가나다라마바사아자차카타파하
                 </p>
             </div>
+            {% else %}
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-sm-6 col-md-5">
+                  <h1> No File </h1>
+                </div>
+              </div>
+            </div>
+            {% endif %}
           </div>
         </div>
       </div>
