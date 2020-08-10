@@ -31,6 +31,10 @@ def check():
 def contact():
     return render_template('contact.html', title = 'Contact')
 
+@app.route('/team')
+def team():
+    return render_template('team.html')
+
 if __name__ == "__main__":
   #  port = int(os.environ.get("PORT", 80))
     try:
