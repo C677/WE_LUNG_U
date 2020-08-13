@@ -1,2 +1,5 @@
 Flask==1.1.2
 flask-bootstrap
+werkzeug.utils
+torchvision
+torch
