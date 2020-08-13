@@ -69,11 +69,16 @@ li {
 }
 
 .result {
-  padding-top: 9rem;
+  width: 100%;
+  height: calc(100vh - 40px);
+  margin-top: 50px;
+  position: relative;
+  align-items: center;
+  /*background-image: url( "../img/black.jpg" );*/
+  display: flex;
 }
 
 .result .shadow {
-  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
@@ -85,8 +90,7 @@ li {
   margin-left: 10px;
   /*이미지 크기 고정*/
   display: block;
-  width: 100%;
-  height: auto;
+
 }
 
 .prob span {
@@ -142,7 +146,7 @@ li {
 .shadow {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
