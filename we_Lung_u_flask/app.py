@@ -75,7 +75,7 @@ def check():
             file.save(secure_filename(file.filename))
 
             model = get_instance_segmentation_model(4)
-            model.load_state_dict(torch.load("model_epoch100.pth", map_location=torch.device('cpu')))
+            model.load_state_dict(torch.load("model5_epoch500.pth", map_location=torch.device('cpu')))
 
             img = Image.open(file.filename).convert('RGB')
             copy = torchvision.transforms.ToTensor()(img).unsqueeze(0)
